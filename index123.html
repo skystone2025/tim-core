@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>SkyStone Feed 离线版</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        input, select, textarea { margin: 5px 0; width: 100%; padding: 8px; }
+        .section { margin-bottom: 20px; }
+        label { font-weight: bold; display: block; }
+    </style>
+</head>
+<body>
+    <h2>🐟 SkyStone Feed 离线版（中英双语）</h2>
+
+    <div class="section">
+        <label>鱼池名称 / Pond Name</label>
+        <input type="text" placeholder="例如：八卦池 / e.g., Bagua Pond">
+    </div>
+
+    <div class="section">
+        <label>记录时间 / Time</label>
+        <input type="datetime-local">
+    </div>
+
+    <div class="section">
+        <label>水质参数 / Water Parameters</label>
+        <input type="text" placeholder="氨氮 NH₃ (mg/L)">
+        <input type="text" placeholder="亚硝酸盐 NO₂⁻ (mg/L)">
+        <input type="text" placeholder="pH 值">
+        <input type="text" placeholder="溶解氧 DO (mg/L)">
+        <input type="text" placeholder="温度 Temp (°C)">
+        <input type="text" placeholder="絮体体积 SV (ml/L)">
+    </div>
+
+    <div class="section">
+        <label>餐次 / Feeding Time</label>
+        <select>
+            <option>早餐 / Morning</option>
+            <option>午餐 / Noon</option>
+            <option>晚餐 / Evening</option>
+        </select>
+        <input type="text" placeholder="饲料量 Feed (g)">
+        <label>菌种拌料 / Probiotics</label>
+        <input type="checkbox"> 乳酸菌 / Lactobacillus
+        <input type="checkbox"> 酵母菌 / Yeast
+        <input type="checkbox"> 丁酸梭菌 / Butyric Bacillus
+    </div>
+
+    <div class="section">
+        <label>糖蜜记录 / Molasses</label>
+        <input type="text" placeholder="使用量 Dosage (ml)">
+        <input type="text" placeholder="稀释倍数 Dilution (e.g. 20x)">
+        <select>
+            <option>泼洒 / Splash</option>
+            <option>滴流 / Drip</option>
+        </select>
+    </div>
+
+    <div class="section">
+        <label>风机状态 / Blower Status</label>
+        <select>
+            <option>全天运行 / Full Day</option>
+            <option>中途关闭 / Interrupted</option>
+            <option>未开启 / Off</option>
+        </select>
+    </div>
+
+    <div class="section">
+        <label>泡沫与粪便 / Foam & Feces</label>
+        <select>
+            <option>泡沫适中 / Moderate Foam</option>
+            <option>浓泡 / Thick Foam</option>
+            <option>无泡 / No Foam</option>
+        </select>
+        <select>
+            <option>粪便沉底 / Sinking</option>
+            <option>挂膜 / Sticking</option>
+            <option>漂浮 / Floating</option>
+        </select>
+        <input type="text" placeholder="死鱼数量 Dead Fish Count">
+    </div>
+
+    <div class="section">
+        <label>备注 / Remarks</label>
+        <textarea rows="4" placeholder="任何观察 / Any observation..."></textarea>
+    </div>
+
+    <p>📦 本系统为离线版，仅供本地记录。Powered by SkyStone Feed v4.0</p>
+</body>
+</html>
