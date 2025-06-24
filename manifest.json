@@ -1,0 +1,20 @@
+{
+  "name": "TIM-CORE SYSTEM",
+  "short_name": "TIM-CORE",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FFFF00",
+  "theme_color": "#FFFF00",
+  "icons": [
+    {
+      "src": "tim-core-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "tim-core-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
